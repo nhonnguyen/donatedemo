@@ -1,0 +1,423 @@
+.header__lang-toggle {
+    display: inline-block;
+	float: right;
+}
+.header__lang-toggle .lang-icon img{
+	width: 32px;
+	display: inline-block;
+}
+.header__nav-toggle{
+	
+}
+.header__nav-toggle span:nth-child(even) {
+    margin-bottom: 15px;
+}
+
+.social li { display: inline-block; margin: 0 4px; }
+.social li a { color: #3c3c3c; background: #fff; display: inline-block; height: 64px; width: 64px; font-size: 32px; text-align: center; border-radius: 50%; line-height: 64px; }
+.social li a:hover { background: #7a0fff; color: #fff; }
+
+@media (max-width: 1024px){
+	.social li { display: inline-block!important; margin: 0 4px; }
+}
+
+@media (max-width: 1440px){
+	.roadmap__header, .tokenomics__header {
+		margin-bottom: 40px;
+	}
+}
+.roadmap__header, .tokenomics__header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.tokenomics__header {
+	margin-top: 90px;
+}
+
+.tokenomics__content{
+	margin-left: 60px;
+}
+
+.tokenomics__text{
+	font-size: 1em;
+}
+
+.tokenomics__list{
+	font-size: 1em;
+	margin-top: 45px !important;
+}
+
+.tokenomics__item{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.tokenomics__wrapper{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.tokenomics__text--mob{
+	display: none;
+}
+
+@media (max-width: 1024px){
+	.tokenomics__wrapper {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.tokenomics__content{
+		margin-top: 30px;
+	}
+	
+	.tokenomics__text--mob{
+		display: block;
+		margin-bottom: 30px;
+		word-wrap: break-word;
+		word-break: break-all;
+	}
+	
+	p.tokenomics__text{
+		display: none;
+	}
+}
+
+.tokenomics-share{
+	display: inline-block;
+    margin-right: 7px;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+.chart {
+/*  position: absolute;*/
+  width: 500px;
+  height: 500px;
+  
+}
+
+@media (max-width: 524px){
+	.chart {
+		width: 260px;
+		height: 260px;
+	}
+}
+
+
+.pieTip {
+  position: absolute;
+  float: left;
+  min-width: 30px;
+  max-width: 300px;
+  padding: 5px 18px 6px;
+  border-radius: 2px;
+  background: rgba(255,255,255,.97);
+  color: #444;
+  font-size: 19px;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: .06em;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.5);
+  -webkit-transform: all .3s;
+     -moz-transform: all .3s;
+      -ms-transform: all .3s;
+       -o-transform: all .3s;
+          transform: all .3s;
+  pointer-events: none;
+}
+.pieTip:after {
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      content: "";
+      height: 0;
+      margin: 0 0 0 -6px;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 6px solid rgba(255,255,255,.95);
+      line-height: 0;
+}
+.chart path { cursor: pointer; }
+
+
+/*** team section ***/
+
+.team {
+    padding: 40px 0 140px;
+}
+@media (max-width: 768px) {
+    .team {
+        padding: 40px 0 70px;
+    }
+}
+.team__header {
+    margin-bottom: 160px;
+    text-align: center;
+}
+@media (max-width: 1440px) {
+    .team__header {
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .team__header {
+        margin-bottom: 70px;
+    }
+}
+.team__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@media (max-width: 1024px) {
+    .team__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+.team__nav-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+}
+@media (max-width: 1024px) {
+    .team__nav-tabs {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+.team__nav-link {
+    width: 100%;
+    /*max-width: calc(33.333% - 40px);*/
+    max-width: calc(33% - 40px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 20px 100px;
+    text-align: center;
+    cursor: pointer;
+}
+@media (max-width: 1440px) {
+    .team__nav-link {
+        margin-bottom: 50px;
+		max-width: calc(33.33% - 40px);
+    }
+}
+@media (max-width: 768px) {
+    .team__nav-link {
+        margin-bottom: 30px;
+		max-width: calc(33.33% - 40px);
+    }
+}
+.team__nav-link:nth-child(7),
+.team__nav-link:nth-child(8),
+.team__nav-link:nth-child(9) {
+    margin-bottom: 0;
+}
+.team__nav-link-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    font-family: "Halvar Breit Th", sans-serif;
+    font-size: 71px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    background: var(--black-color);
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+	background-position: center;
+    background-size: cover;
+}
+@media (max-width: 1440px) {
+    .team__nav-link-photo {
+        width: 180px;
+        height: 180px;
+        font-size: 50px;
+    }
+}
+@media (max-width: 1024px) {
+    .team__nav-link-photo {
+        width: 140px;
+        height: 140px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .team__nav-link-photo {
+        width: 120px;
+        height: 120px;
+        font-size: 24px;
+    }
+}
+.team__nav-link-text {
+	margin-top: 20px;
+    font-size: 22px;
+}
+@media (max-width: 1440px) {
+    .team__nav-link-text {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+}
+@media (max-width: 1024px) {
+    .team__nav-link-text {
+        font-size: 21px;
+    }
+}
+@media (max-width: 768px) {
+    .team__nav-link-text {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+.team__nav-link.active .team__nav-link-photo,
+.team__nav-link:hover .team__nav-link-photo {
+    /*border: none;*/
+    -webkit-box-shadow: 0 0 144px rgba(255, 199, 0, 0.58);
+    box-shadow: 0 0 144px rgba(255, 199, 0, 0.58);
+    color: var(--black-color);
+    /*background: var(--primary-gradient);*/
+}
+.team__tabs {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+@media (max-width: 1024px) {
+    .team__tabs {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .team__tabs {
+        margin-top: 50px;
+    }
+}
+.team__tab {
+    display: none;
+    width: 100%;
+    max-width: 585px;
+    padding: 90px;
+    text-align: center;
+    border-radius: 24px;
+    -webkit-box-shadow: 0 5px 0 #ffc901, -27.0907px 63.8217px 138.667px #000, inset 18.0605px -42.5478px 46.2222px #070707, inset -18.0605px 42.5478px 46.2222px #191919;
+    box-shadow: 0 5px 0 #ffc901, -27.0907px 63.8217px 138.667px #000, inset 18.0605px -42.5478px 46.2222px #070707, inset -18.0605px 42.5478px 46.2222px #191919;
+    background: -o-linear-gradient(247deg, #000 0, #1c1c1c 76.26%);
+    background: linear-gradient(203deg, #000 0, #1c1c1c 76.26%);
+}
+@media (max-width: 1440px) {
+    .team__tab {
+        max-width: 450px;
+    }
+}
+@media (max-width: 768px) {
+    .team__tab {
+        padding: 40px;
+    }
+}
+.team__tab.active {
+    display: block;
+}
+.team__tab-number {
+    margin-bottom: 35px;
+    font-family: "Halvar Breit Th", sans-serif;
+    font-size: 104px;
+    color: var(--primary-color);
+}
+@media (max-width: 1440px) {
+    .team__tab-number {
+        font-size: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .team__tab-number {
+        font-size: 60px;
+    }
+}
+.team__tab-title {
+    margin-bottom: 65px;
+    font-size: 36px;
+    font-weight: 400;
+}
+@media (max-width: 1440px) {
+    .team__tab-title {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .team__tab-title {
+        font-size: 24px;
+    }
+}
+.team__tab-text {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: left;
+}
+@media (max-width: 1440px) {
+    .team__tab-text {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .team__tab-text {
+        font-size: 21px;
+    }
+}
+
+.team-member-contacts{
+	margin-top: 8px;
+}
+.team-member-contacts a{
+	color: var(--primary-color);
+}
